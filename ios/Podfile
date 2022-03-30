@@ -12,6 +12,8 @@ target 'webview' do
     :hermes_enabled => false
   )
 
+  pod 'react-native-webview', :path => '../node_modules/react-native-webview'
+
   target 'webviewTests' do
     inherit! :complete
     # Pods for testing
