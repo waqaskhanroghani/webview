@@ -3,8 +3,15 @@ import React from 'react';
 import styles from './styles';
 import {WebView} from 'react-native-webview';
 import SplashScreen from 'react-native-splash-screen';
+import {useEffect} from 'react';
 
 export default function Home() {
+  useEffect(() => {
+    SplashScreen.hide();
+
+    return () => {};
+  }, []);
+
   const google = 'http://www.google.com';
   const portal = 'https://www.awkumlms.com/Student/index';
 
